@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>THE BEST RENOVATION SOLUTIONS | Home Renovations</title>
+
+<meta name="description" content="The Best Renovation Solutions provides basement renovations, roofing, flooring, painting and concrete services. Contact us for your renovation project.">
+
+<style>
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+:root {
+    --navy: #101c32;
+    --navy-light: #1b2b45;
+    --gold: #c5a46d;
+    --gold-light: #dfc69c;
+    --white: #ffffff;
+    --light: #f6f5f2;
+    --dark: #222222;
+    --grey: #777777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    line-height: 1.7;
+    color: var(--dark);
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--grey);
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.gold-line {
+    width: 65px;
+    height: 3px;
+    background: var(--gold);
+    margin: 15px auto 25px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    background: var(--navy);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,.15);
+}
+
+.logo {
+    color: var(--white);
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: var(--white);
+    margin-left: 23px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: bold;
+    border: 1px solid var(--gold);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--gold);
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--navy);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 680px;
+    height: 90vh;
+    background:
+    linear-gradient(rgba(8,17,31,.72),rgba(8,17,31,.72)),
+    url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1800');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-content .eyebrow {
+    color: var(--gold-light);
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    color: var(--gold-light);
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #eeeeee;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    background: var(--light);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: var(--navy);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.about-label {
+    color: #a88955;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #e8e5df;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 25px;
+}
+
+.service-info h3 {
+    color: var(--navy);
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.service-info p {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    background: var(--light);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 18px;
+    background: linear-gradient(transparent, rgba(0,0,0,.8));
+    color: white;
+    font-weight: bold;
+}
+
+/* =========================
+   ESTIMATE CALCULATOR
+========================= */
+
+.calculator {
+    background: var(--navy);
+    color: white;
+}
+
+.calculator .section-title {
+    color: white;
+}
+
+.calculator .section-subtitle {
+    color: #cccccc;
+}
+
+.calculator-box {
+    max-width: 650px;
+    margin: auto;
+    padding: 40px;
+    background: var(--navy-light);
+    border: 1px solid rgba(197,164,109,.5);
+}
+
+.calculator-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.calculator-box input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+}
+
+.calculator-box input:focus {
+    border-color: var(--gold);
+}
+
+#result {
+    margin-top: 25px;
+    color: var(--gold-light);
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.estimate-note {
+    text-align: center;
+    font-size: 13px;
+    color: #cccccc;
+    margin-top: 15px;
+}
+
+/* =========================
+   CUSTOMER REVIEWS
+========================= */
+
+.reviews {
+    background: white;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    padding: 30px;
+    background: var(--light);
+    border-bottom: 3px solid var(--gold);
+}
+
+.review-card h3 {
+    color: var(--navy);
+    margin-top: 20px;
+}
+
+.review-card p {
+    color: #666;
+}
+
+.review-stars {
+    color: var(--gold);
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+
+.review-placeholder {
+    text-align: center;
+    color: var(--grey);
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: var(--light);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.contact-card {
+    padding: 30px 20px;
+    background: white;
+}
+
+.contact-icon {
+    font-size: 32px;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+.contact-card p,
+.contact-card a {
+    color: var(--grey);
+    word-break: break-word;
+}
+
+.contact-card a:hover {
+    color: var(--gold);
+}
+
+/* =========================
+   CALL TO ACTION
+========================= */
+
+.cta {
+    background: var(--navy);
+    padding: 65px 20px;
+    text-align: center;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+    color: #dddddd;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #091323;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+footer span {
+    color: var(--gold);
+}
+
+footer p {
+    color: #bcbcbc;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #ddd;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    nav a {
+        margin-left: 12px;
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .services-grid,
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--navy);
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 12px 0;
+        font-size: 15px;
+    }
+
+    .hero {
+        min-height: 600px;
+        height: 80vh;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .services-grid,
+    .gallery-grid,
+    .reviews-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+
+    .calculator-box {
+        padding: 25px;
+    }
+
+    .cta h2 {
+        font-size: 27px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+
+    <a href="#home" class="logo">
+        THE BEST <span>RENOVATION</span> SOLUTIONS
+    </a>
+
+    <button class="menu-toggle"
+    onclick="toggleMenu()"
+    aria-label="Toggle navigation"
+    aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="navbar">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#services" onclick="closeMenu()">Services</a>
+        <a href="#gallery" onclick="closeMenu()">Gallery</a>
+        <a href="#reviews" onclick="closeMenu()">Reviews</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            QUALITY • CRAFTSMANSHIP • EXCELLENCE
+        </div>
+
+        <h1>
+            Transforming Houses Into
+            <span>Dream Homes</span>
+        </h1>
+
+        <p>
+            From beautiful basements to complete home renovations,
+            we bring your vision to life with quality and care.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#services" class="btn">
+                EXPLORE OUR SERVICES
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                CONTACT US
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about" class="section about">
+
+    <div class="container about-content">
+
+        <div class="about-image">
+
+            <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000"
+            alt="Beautiful renovated modern home">
+
+        </div>
+
+        <div class="about-text">
+
+            <div class="about-label">
+                WHO WE ARE
+            </div>
+
+            <h2>
+                Building Better Spaces, Creating Better Living.
+            </h2>
+
+            <div class="gold-line" style="margin-left:0"></div>
+
+            <p>
+                At THE BEST RENOVATION SOLUTIONS, we believe every
+                home has the potential to become something extraordinary.
+            </p>
+
+            <p>
+                We are dedicated to providing quality renovation
+                solutions that combine functionality, thoughtful design
+                and attention to detail.
+            </p>
+
+            <p>
+                Whether you are planning a basement renovation,
+                upgrading your flooring or improving your home's exterior,
+                we are here to help bring your ideas to life.
+            </p>
+
+            <a href="#contact" class="btn">
+                LET'S TALK ABOUT YOUR PROJECT
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES SECTION -->
+
+<section id="services" class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Our Services
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p class="section-subtitle">
+            Complete renovation solutions designed to improve
+            your home, enhance your space and bring your vision to life.
+        </p>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
+                alt="Finished basement renovation">
+
+                <div class="service-info">
+
+                    <h3>Legal Basements</h3>
+
+                    <p>
+                        Transform your basement into a beautiful,
+                        functional and comfortable living space.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800"
+                alt="Home interior renovation">
+
+                <div class="service-info">
+
+                    <h3>Home Renovations</h3>
+
+                    <p>
+                        Upgrade and transform your living spaces
+                        with thoughtful renovation solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1635424710928-9a67a7f3b1a9?w=800"
+                alt="Roofing work">
+
+                <div class="service-info">
+
+                    <h3>Roofing</h3>
+
+                    <p>
+                        Improve and protect your home with
+                        professional roofing solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=800"
+                alt="Modern flooring">
+
+                <div class="service-info">
+
+                    <h3>Flooring</h3>
+
+                    <p>
+                        Refresh your interiors with flooring
+                        options that complement your home.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800"
+                alt="Beautiful painted interior">
+
+                <div class="service-info">
+
+                    <h3>Painting</h3>
+
+                    <p>
+                        Give your home a fresh look with
+                        quality interior and exterior painting.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1515263487990-61b07816b324?w=800"
+                alt="Concrete construction">
+
+                <div class="service-info">
+
+                    <h3>Concrete Work</h3>
+
+                    <p>
+                        Enhance your property with durable
+                        and practical concrete solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECT GALLERY -->
+
+<section id="gallery" class="section gallery">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Our Project Gallery
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p class="section-subtitle">
+            Explore design inspiration and beautiful renovation spaces.
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800"
+                alt="Modern living room">
+                <div class="gallery-caption">
+                    Modern Living Spaces
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+                alt="Luxury home interior">
+                <div class="gallery-caption">
+                    Interior Renovations
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800"
+                alt="Modern kitchen">
+                <div class="gallery-caption">
+                    Kitchen Design
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800"
+                alt="Elegant home design">
+                <div class="gallery-caption">
+                    Elegant Interiors
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800"
+                alt="Home renovation">
+                <div class="gallery-caption">
+                    Home Improvements
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800"
+                alt="Beautiful renovated room">
+                <div class="gallery-caption">
+                    Beautiful Finishes
+                </div>
+            </div>
+
+        </div>
+
+        <p class="review-placeholder">
+            Gallery images are for design inspiration.
+            Replace them with photographs of your completed projects.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- COST CALCULATOR -->
+
+<section id="calculator" class="section calculator">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Renovation Cost Calculator
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p class="section-subtitle">
+            Get a preliminary estimate based on the square footage
+            of your renovation project.
+        </p>
+
+        <div class="calculator-box">
+
+            <label for="sqft">
+                Enter Project Size (Square Feet)
+            </label>
+
+            <input
+            type="number"
+            id="sqft"
+            placeholder="Example: 1000"
+            min="1"
+            step="1">
+
+            <button class="btn"
+            onclick="calculateEstimate()">
+                CALCULATE ESTIMATE
+            </button>
+
+            <div id="result" aria-live="polite"></div>
+
+            <p class="estimate-note">
+                Preliminary estimate based on $7 per square foot.
+                Actual costs depend on project details, materials,
+                labour and scope of work. This is not a formal quote.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CUSTOMER REVIEWS -->
+
+<section id="reviews" class="section reviews">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Customer Reviews
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p class="section-subtitle">
+            We value our customers and appreciate their feedback.
+        </p>
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+
+                <div class="review-stars">★★★★★</div>
+
+                <p>
+                    Your customer review can appear here.
+                    Share feedback about the quality of work
+                    and overall experience.
+                </p>
+
+                <h3>Customer Name</h3>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-stars">★★★★★</div>
+
+                <p>
+                    Add a genuine customer testimonial here
+                    to help future customers learn about
+                    your renovation services.
+                </p>
+
+                <h3>Customer Name</h3>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-stars">★★★★★</div>
+
+                <p>
+                    Display another verified customer review
+                    highlighting a completed renovation project.
+                </p>
+
+                <h3>Customer Name</h3>
+
+            </div>
+
+        </div>
+
+        <p class="review-placeholder">
+            Replace these placeholders with actual customer reviews
+            before publishing the website.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>
+            Your Home. Your Vision. Our Expertise.
+        </h2>
+
+        <p>
+            Let's turn your renovation ideas into reality.
+        </p>
+
+        <a href="#contact" class="btn">
+            GET IN TOUCH
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="section contact">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Contact Us
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p class="section-subtitle">
+            Ready to start your next renovation project?
+            Get in touch with us today.
+        </p>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <div class="contact-icon">☎</div>
+
+                <h3>Call Us</h3>
+
+                <a href="tel:+14379988223">
+                    437-998-8223
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">✉</div>
+
+                <h3>Email Us</h3>
+
+                <a href="mailto:kasturiamar@gmail.com">
+                    kasturiamar@gmail.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">⌂</div>
+
+                <h3>Visit Our Website</h3>
+
+                <a href="https://thebestrenovationsolutions.ca"
+                target="_blank"
+                rel="noopener noreferrer">
+                    thebestrenovationsolutions.ca
+                </a>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div style="text-align:center">
+
+            <p style="color:#777">
+                THE BEST RENOVATION SOLUTIONS
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>
+        THE BEST <span>RENOVATION</span> SOLUTIONS
+    </h3>
+
+    <p>
+        Quality Workmanship. Thoughtful Design. Better Living.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+    <p>
+        Legal Basements • Renovations • Roofing • Flooring
+        • Painting • Concrete Work
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 THE BEST RENOVATION SOLUTIONS.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+// MOBILE NAVIGATION
+
+function toggleMenu() {
+
+    const navbar = document.getElementById("navbar");
+    const button = document.querySelector(".menu-toggle");
+
+    navbar.classList.toggle("active");
+
+    button.setAttribute(
+        "aria-expanded",
+        navbar.classList.contains("active")
+    );
+
+}
+
+function closeMenu() {
+
+    document.getElementById("navbar")
+    .classList.remove("active");
+
+    document.querySelector(".menu-toggle")
+    .setAttribute("aria-expanded", "false");
+
+}
+
+
+// COST ESTIMATE CALCULATOR
+
+function calculateEstimate() {
+
+    const sqft = parseFloat(
+        document.getElementById("sqft").value
+    );
+
+    const result = document.getElementById("result");
+
+    if (!Number.isFinite(sqft) || sqft <= 0) {
+
+        result.textContent =
+        "Please enter a valid square footage.";
+
+        return;
+
+    }
+
+    const rate = 7;
+
+    const total = sqft * rate;
+
+    result.textContent =
+        "Estimated Preliminary Cost: $" +
+        total.toLocaleString("en-CA", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        });
+
+}
+
+</script>
+
+</body>
+</html>
